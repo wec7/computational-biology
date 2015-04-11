@@ -1,0 +1,210 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Structured General Purpose Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage{graphicx} % Required to insert images
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in 
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center header
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Apply MLT to Model 3D Chromatin Structures]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+   
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Proposal} % Assignment title
+\newcommand{\hmwkDueDate}{Monday,\ Apr 21,\ 2014} % Due date
+\newcommand{\hmwkClass}{CompBio} % Course/class
+\newcommand{\hmwkClassTime}{1:30pm} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Jianyang Zeng} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Tianyi Hao, Weiyi Chen} % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+%\newpage
+%\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+% To have just one problem per page, simply put a \clearpage after each problem
+
+\begin{homeworkProblem}
+	Manifold learning techniques [5,2], such as Locally Linear Embedding (LLE), Isomap and Laplacian eigenmaps, have become a popular topic in computer vision and dimensionality reduction. In most of original manifold learning algorithms, pairwise distances are used to compute the embeddings. In the chromatin structure modeling problem, we are given the the interaction frequency (or contact probability) information for pairs of DNA fragments. The original manifold learning algorithms can be modified so that the interaction frequency information is directly used to embed chromatin structures into the 3D Euclidean space. Comparing to other approaches in the literature, such an approach does not need to convert interaction frequency to local distance.
+	\begin{homeworkSection}{Introduction}
+		Three-Dimensional Chromatin Structure Modeling via frequency data is an important task in computational biology research, and there are several methods proposed to handle it [6,7]. However, those methods are indirect ways by converting interaction frequency into local distance of using the interaction frequency data, which will be very noisy (i.e. having a large variance)when two fragments are far away from each other. Locally Linear Embedding (LLE) [1,2,4] is among the most important Nonlinear Dimensionality Reduction techniques [5], which have extensive applications in manifold learning. It only considers several nearest neighbors (i.e. local information) for calculating a low dimensional embedding. Therefore, we plan to use LLE technique to embed the chromatin structures into the 3D Euclidean space, by directly using the interaction frequency data of pairs of DNA fragments as the distance measure. Our project expects a better experiment result over the previous methods [6,7].
+	\end{homeworkSection}
+	\begin{homeworkSection}{Manifold learning techniques and LLE}
+		\textbf{Manifold Learning} (often also referred to as non-linear dimensionality reduction) pursuits the goal to embed data that originally lies in a high dimensional space in a lower dimensional space, while preserving characteristic properties. This is possible because for any high dimensional data to be interesting, it must be intrinsically low dimensional. High-dimensional data, meaning data that requires more than two or three dimensions to represent, can be difficult to interpret. One approach to simplification is to assume that the data of interest lie on an embedded non-linear manifold within the higher-dimensional space. If the manifold is of low enough dimension, the data can be visualized in the low-dimensional space. \\
+		We follow the work by Saul and Roweis [1][2]. And the following is the original Locally Linear Embedding algorithm proposed in [1]. The main idea is that if the sample data are dense enough on a low dimensional manifold, any of the points can be approximately expressed as an affine combination of its neighbors. We reserve the affine combinations and fit the data points in a smaller dimension. 
+	\end{homeworkSection}
+	\begin{homeworkSection}{Pseudocode}
+		\begin{itemize}
+			\item Parameter: K(The number of neighbors per point)
+			\item Parameter: $X_1, ..., X_N \in R^D$
+			\item Return: $Y_1, ..., Y_N \in R^d$
+			\item Compute the nearest K neighbors of each data point X, as $\Gamma(i)$
+			\item Compute the weighs $W_{i,j}$ that best reconstruct each data point $X_i$ from its neighbors, minimizing the cost in $E(W) = \sum_i |X_i - \sum_{j \in \Gamma(i)} W_{ij}X_j|^2$ subjected to $\sum_{j \in \Gamma(i)} W_{ij} = 1$ for every $i$.
+			\item Compute the vectors $Y_i$ best reconstructed by the weights $W_{ij}$, minimizing the quadratic form $\Phi(W) = \sum_i |Y_i - \sum_{j \in \Gamma(i)} W_{ij}Y_j |^2$ by its bottom nonzero eigenvectors.
+		\end{itemize}
+		We modify the LLE Algorithm a bit to fit in interaction frequency data. We can make $d=3$ in order to get three-dimensional points as the output. We can select the neighbors by the interaction frequency data because we can assume that the bigger frequency two fragments interact, the nearer they are. The most important step is the modification of step 2 in LLE, i.e., calculating $W_{ij}$ out of the interaction frequency data. We want to firstly try a very natural way of setting $W_{ij}$: proportional to the interaction frequency $f_{ij}$ ($f_{ij}$ is the interaction frequency between fragment $i$ and fragment $j$), i.e. 
+		$$ W_{ij} = \frac{f_{ij}}{\sum_{j \in \Gamma(i)}f_{ij}} $$
+		where $j \in \Gamma(i)$, otherwise $W_{ij} = 0$. \\
+		There are also some other possible ways to set $W_{ij}$. For example, $W_{ij}$ is proportional to $f_{ij}^p$ where $p>0$. And furthermore, we can make use of the frequency $f_{jj'}$ where $j, j' \in \Gamma(i)$ and $j \neq j'$ to calculate $W_{ij}$ for point $i$. In that case, we utilize more data nearby and possibly achieve better result. Intuitively, setting $W_{ij}$ proportional to $f_{ij}^p$ is like we are assuming the distance of two fragments is inversely proportional to $f_{ij}^p$ since when we want to minimize the sum of products, the smaller the distance is, the larger the weight would be.
+	\end{homeworkSection}
+	\begin{homeworkSection}{Dataset}
+		We plan to conduct experiment on the data in [6,7] as our first test data for the compare of performance. After that, we want to further explore it on other interaction frequency data base such as [3]. The data attached on our assignment 4 may also be used for the comparison of our previous homework performance.
+	\end{homeworkSection}
+	\begin{homeworkSection}{Implementation and Experiment}
+		We have already got the source code of LLE[4], and so we can soon conduct the experiment. One freedom of the algorithm is the choice of??. If it is very small, then the neighbors may not provide a very good approximation for a data point. If it is very large, then the algorithm may suffer more from the error in the action frequency data. Therefore, in the experiment, it would be important to explore the performance of the proposed algorithm on different values of K.Following experiments may cover different choices of algorithm calculating $W_{ij}$.	
+	\end{homeworkSection}
+	\begin{homeworkSection}{Reference}
+		\begin{enumerate}
+			\item L. Saul and S. Roweis, An Introduction to Locally Linear Embedding.
+			\item S. Roweis and L. Saul, Nonlinear Dimensionality Reduction by Locally Linear Embedding. Science 290,pp.2323-2326 (2000) 
+			\item \href{http://chromosome.sdsc.edu/mouse/hi-c/index.html}{\textcolor{blue}{Chromosome}}
+			\item \href{http://www.cs.nyu.edu/~roweis/lle/}{\textcolor{blue}{CS NYU}}
+			\item \href{http://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction}{\textcolor{blue}{Wiki Nonlinear dimensionality reduction}}
+			\item Fraser J, Rousseau M, Shenker S, Ferraiuolo MA, Hayashizaki Y, Blanchette M, Dostie J.,Chromatin Conformation Signatures of Cellular Differentiation. Genome Biol. 2009;10(4):R37
+			\item Rousseau M, Fraser J, Ferraiuolo MA, Dostie J, Blanchette M. Three-Dimensional Modeling of Chromatin Structure from Interaction Frequency Data Using Markov Chain Monte Carlo Sampling.BMC Bioinformatics. 2011.
+		\end{enumerate}
+	\end{homeworkSection}
+\end{homeworkProblem}
+\end{document}

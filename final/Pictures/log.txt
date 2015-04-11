@@ -1,0 +1,19 @@
+LLE:
+fig1	1d3z	K=7	rmsd=6.0382
+fig2	1ubq	K=7	rmsd=5.3413
+fig3	1ubq	K=1-287
+fig4	1d3z	K=1-299
+fig5	1ubq	K=250	rmsd=2.0217
+fig6	1d3z	K=250	rmsd=2.8712
+fig7	1g7k	K=10-870
+fig8	1g7k	K=790	rmsd=4.3788
+MDS:
+fig01	1d3z	rmsd=2.2644e-005
+fig02	1ubq	rmsd=6.2996e-005
+fig03	1g7k	rmsd=3.3618e-005
+real data (hESC):
+fig001	uij.chr20.csv
+fig002	uij.chr23.csv
+fig003	uij.chr7.csv
+fig004	uij.chr17.csv
+fig005	uij.chr1.csv
